@@ -1,0 +1,5 @@
+services:
+
+  plugin.manager.zero.install:
+    class: Drupal\zero_install\Manager\ZeroInstallPluginManager
+    parent: default_plugin_manager

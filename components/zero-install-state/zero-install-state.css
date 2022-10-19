@@ -1,0 +1,62 @@
+.zero-install-state {
+  padding: 2em;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: 50% center;
+  position: relative;
+  cursor: pointer;
+}
+
+.zero-install-state--success {
+  background-image: url(../../../../../core/misc/icons/73b355/check.svg);
+}
+
+.zero-install-state--warning {
+  background-image: url(../../../../../core/misc/icons/e29700/warning.svg);
+}
+
+.zero-install-state--error {
+  background-image: url(../../../../../core/misc/icons/e32700/error.svg)
+}
+
+.zero-install-state__icon {
+  display: none;
+  aspect-ratio: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 4px;
+}
+
+.zero-install-state--progress .zero-install-state__icon {
+  display: grid;
+}
+
+.zero-install-state__icon::before,
+.zero-install-state__icon::after {
+  content:"";
+  grid-area: 1/1;
+  --c: radial-gradient(farthest-side, #0071b8 92%, #0000);
+  background:
+    var(--c) 50%  0,
+    var(--c) 50%  100%,
+    var(--c) 100% 50%,
+    var(--c) 0    50%;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  animation: zero-install-state__icon-animation 1s infinite;
+}
+
+.zero-install-state__icon::before {
+  margin: 4px;
+  background-size: 8px 8px;
+  animation-timing-function: linear;
+}
+
+@keyframes zero-install-state__icon-animation {
+  100% {
+    transform: rotate(.5turn);
+  }
+}

@@ -1,0 +1,60 @@
+.zero-install-button {
+  padding: .5em 2em;
+  border-radius: 0;
+  text-decoration: none;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+  white-space: pre;
+  transition: background-color .3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.zero-install-button:hover {
+  filter: brightness(120%);
+}
+
+.zero-install-button--theme-action {
+  background-color: #0071b8;
+  color: white;
+}
+
+.zero-install-button--theme-danger {
+  background-color: #a51b00;
+  color: white;
+}
+
+.zero-install-button--theme-normal {
+  background-color: #cccccc;
+  color: white;
+}
+
+.zero-install-button.zero-install-button--theme-normal:hover {
+  filter: brightness(80%);
+}
+
+.zero-install-button--progress:after {
+  display: inline-block;
+  content: '';
+  background-color: rgba(0, 0, 0, .4);
+  width: 20%;
+  height: .5em;
+  position: absolute;
+  bottom: 0;
+  animation: zero-install-button__progress .5s alternate-reverse linear infinite;
+}
+
+@keyframes zero-install-button__progress {
+  from {
+    transform: translateX(0px);
+    left: 0;
+  }
+  to {
+    transform: translateX(-100%);
+    left: 100%;
+  }
+}

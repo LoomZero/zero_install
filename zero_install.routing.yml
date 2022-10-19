@@ -1,0 +1,7 @@
+install:
+  path: '/admin/zero/install'
+  defaults:
+    _controller: '\Drupal\zero_install\Controller\ZeroInstallController::serve'
+    _title: 'Zero Install'
+  requirements:
+    _permission: 'zero install access'

@@ -1,0 +1,19 @@
+{{ attach_library('zero_preprocess/zero-install-page') }}
+
+<div class="zero-install-page">
+  <div class="zero-install-page__header">
+    <h2 class="zero-install-page__title">Components Installer</h2>
+  </div>
+  <div class="zero-install-page__items">
+    {% for plugin in plugins %}
+      <div class="zero-install-page__item" data-id="{{ plugin.id }}">
+        <div class="zero-install-page__state">{{ state }}</div>
+        <div class="zero-install-page__content">
+          <h3 class="zero-install-page__label">{{ plugin.label }}</h3>
+          <div class="zero-install-page__info"></div>
+        </div>
+        <div class="zero-install-page__controlls">{{ button }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

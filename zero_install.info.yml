@@ -1,0 +1,5 @@
+name: Zero Install
+type: module
+description: "Zero Install"
+core_version_requirement: 9.*
+package: zero

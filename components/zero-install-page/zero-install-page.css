@@ -1,0 +1,40 @@
+.zero-install-page__header {
+  padding: 1em;
+  background-color: #e6e4df;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.zero-install-page__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.zero-install-page__item {
+  display: flex;
+  width: 100%;
+  background-color: #fcfcfa;
+  border: 1px solid #e6e4df;
+  align-items: center;
+}
+
+.zero-install-page__item:hover {
+  background-color: #ececea;
+}
+
+.zero-install-page__content {
+  width: 100%;
+  padding: 1em;
+}
+
+.zero-install-page__state {
+  align-self: flex-start;
+  border-right: 1px solid #e6e4df;
+  border-bottom: 1px solid #e6e4df;
+}
+
+.zero-install-page__controlls {
+  padding: 1em;
+  align-self: flex-end;
+}

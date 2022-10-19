@@ -1,0 +1,4 @@
+zero install access:
+  title: 'Access to install zero comps'
+  description: 'Access to install zero comps'
+  restrict access: TRUE
