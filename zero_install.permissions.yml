@@ -2,3 +2,8 @@ zero install access:
   title: 'Access to install zero comps'
   description: 'Access to install zero comps'
   restrict access: TRUE
+
+zero component manager access:
+  title: 'Access to component manager'
+  description: 'Access to component manager'
+  restrict access: TRUE

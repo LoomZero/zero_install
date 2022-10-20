@@ -31,7 +31,7 @@ class ZeroInstallButton extends ZeroThemeBuilderBase {
   }
 
   public function setMode(string $key): self {
-    $this->theme[$this->getKey('mode')] = $key;
+    $this->theme['mode'] = $key;
     return $this;
   }
 
@@ -45,10 +45,10 @@ class ZeroInstallButton extends ZeroThemeBuilderBase {
    * @returns self
    */
   public function addMode(string $key, array $options = []): self {
-    if (!isset($this->theme[$this->getKey('mode')])) {
-      $this->theme[$this->getKey('mode')] = $key;
+    if (!isset($this->theme['mode'])) {
+      $this->theme['mode'] = $key;
     }
-    $this->theme[$this->getKey('modes')][$key] = array_merge([
+    $this->theme['modes'][$key] = array_merge([
       'text' => '',
       'icon' => NULL,
       'theme' => 'normal',

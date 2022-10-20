@@ -5,3 +5,11 @@ install:
     _title: 'Zero Install'
   requirements:
     _permission: 'zero install access'
+
+zero_install.comp_manager_page:
+  path: '/admin/zero/component-manager'
+  defaults:
+    _controller: '\Drupal\zero_install\Controller\CompManagerPageController::serve'
+    _title: 'Zero Component Manager'
+  requirements:
+    _permission: 'zero component manager access'

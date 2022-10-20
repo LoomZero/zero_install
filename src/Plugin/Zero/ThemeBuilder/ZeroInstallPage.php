@@ -60,7 +60,7 @@ class ZeroInstallPage extends ZeroThemeBuilderBase {
   }
 
   public function addPlugin(string $id, string $label, array $summary = []): self {
-    $this->theme[$this->getKey('plugins')][$id] = [
+    $this->theme['plugins'][$id] = [
       'id' => $id,
       'label' => $label,
       'summary' => $summary,

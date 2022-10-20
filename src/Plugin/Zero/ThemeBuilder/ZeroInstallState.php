@@ -23,8 +23,8 @@ use Drupal\zero_preprocess\Base\ZeroThemeBuilderBase;
 class ZeroInstallState extends ZeroThemeBuilderBase {
 
   public function setMode(string $mode, string $tooltip = ''): self {
-    $this->theme[$this->getKey('mode')] = $mode;
-    $this->theme[$this->getKey('tooltip')] = $tooltip;
+    $this->theme['mode'] = $mode;
+    $this->theme['tooltip'] = $tooltip;
     return $this;
   }
 
